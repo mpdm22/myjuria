@@ -1,11 +1,11 @@
-﻿streamlit
+streamlit
 python-dotenv
-langchain
+langchain>=0.2
 langchain-community
-groq
+langchain-chroma
 chromadb
 sentence-transformers
 torch
 transformers
-faiss-cpu
+groq
 protobuf==3.20.3
