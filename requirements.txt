@@ -8,3 +8,4 @@ sentence-transformers
 torch
 transformers
 faiss-cpu
+protobuf==3.20.3
