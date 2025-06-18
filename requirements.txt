@@ -3,6 +3,7 @@ python-dotenv
 langchain>=0.2
 langchain-community
 langchain-chroma
+langchain-huggingface
 chromadb
 sentence-transformers
 torch
