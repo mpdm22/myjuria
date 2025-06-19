@@ -1,6 +1,6 @@
 streamlit
 python-dotenv
-langchain>=0.2
+langchain
 langchain-community
 langchain-chroma
 langchain-huggingface
