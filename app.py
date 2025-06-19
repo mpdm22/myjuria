@@ -8,8 +8,8 @@ from langchain.llms.base import LLM
 from typing import List
 from groq import Groq
 import os
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 # ------------ CONFIGURATION PAGE ------------
 st.set_page_config(page_title="Chatbot Juridique SN", page_icon="⚖️", layout="wide")
@@ -30,7 +30,7 @@ st.divider()
 class GroqLLM(LLM):
     model: str = "llama-3.3-70b-versatile"
     temperature: float = 0.2
-    api_key: str = os.environ.get("GROQ_API_KEY")
+    api_key: str = st.secrets["GROQ_API_KEY"]
 
     @property
     def _llm_type(self) -> str:
